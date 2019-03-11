@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Laxcon Steels Limited</string>
+
+    <string name="companyDescription">With a focus to fit each client’s requirements. With its inception in 1978, <b>Gopal Group</b> of Industries today has established itself as a very well known player in the <b>global stainless steel industry</b>. Thanks to its strategic planning, ultra-modern facilities and exceptional team, Gopal Group has become a name to reckon with internationally. With a focus to fit each client’s specific requirements, the Group companies work hand in hand to produce the finest <b>stainless steel products</b>.
+
+        Ever since its foray into the steel trade in 1978, <b>Gopal Group</b> has established itself as name to reckon with, in the steel industry. Over the years, through meticulous quality control and outstanding customer care, it has built a reputation for quality, reliability and integrity.
+
+What started off as a small steel plant with a capacity of 2400 MT/year, Gopal Group has now grown into an organization with manufacturing facilities at multiple locations with a combined production capacity of 120,000 MT/year. Strong values of a family run enterprise backed by an assembly of industry’s most talented professionals has given the group its current form &amp; stature.
+
+Today, Gopal Group’s wide range of products includeshigh quality SS bright bars, equal angles, Square &amp; Hexagonal bars, Flat Bars, Forged and Turned Round Bars, Forging quality Ingots and Concast Billets in over 100 Stainless Steel and alloy steel grades.
+
+With sophisticated machinery procured from the best international manufacturers, Gopal Group boasts a full array of processes including Steel Melting Shops with an Argon Oxygen Decarburization (AOD) Converter, Ladle Refining Furnace (LRF), and Vacuum Oxygen Decarburization Converter (VD/VOD). Moreover, Gopal Group also has a Billet/Bloom/Round Twin-strand Continuous Caster of 9/16 Meter Radius, followed by heat treatment facilities and two 5 and 6 stand semi-automatic hot rolling mills. Our bright bar unit is also equipped with the most sophisticated technologies to deliver the highest quality stainless steel.</string>
+    <string name="gopal_group_of_industries">Gopal Group of Industries</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
