@@ -15,4 +15,32 @@ With sophisticated machinery procured from the best international manufacturers,
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="a_very_long_description_for_the_products">Our stainless steel bright bars are crafted with high finishing for superior quality and they are massively used in producing mechanical parts, owing to their paramount mechanical properties. Popular applications are found in the manufacturing of machine tools, parts of heavy machines, electric pumps, electric motors, railway engines, coaches, arms, ammunition, automobile parts and many more.
+        Size range	5mm – 110mm (3/16″ – 4 1/3″)
+        Supply conditions
+        Length	Up to 6.5 meters
+        Tolerances	h7, h8, h9, h10, h11, k12, k13
+        Surface finish	RA upto 0.2 mm (8.7 RMS)
+        Straightness	Up to 0.5 mm per meter TIR
+        Grit polish	K240,K320 or as per customer’s requirement
+        Heat treatment	Soft annealing, solution annealing, oil &amp; water quenching, tempering &amp; normalizing
+        Bars end finish	Chamfered ends, 300, 450 &amp; 600 plain ends without burrs or sharp edges
+        Specifications	As per EN, DIN, JIS, ASTM, BS, ASME, GHOST, AISI/Nace MRO175
+        Cold drawn, centreless ground, peeled &amp; polished, rough peeled or smooth turned bar
+        Grade Confirmation through PMI testing with Handheld Spectrometer.
+        Free from radioactive elements, mercury &amp; lead contamination
+
+    </string>
+
+    <string-array name="array_calculator">
+        <item>Calculate Weight of S.S Round Bar</item>
+        <item>Calculate Weight of S.S Hexagonal Bar</item>
+        <item>Calculate Weight of S.S Square Bar</item>
+        <item>Calculate Weight of S.S Flat Bar</item>
+        <item>Calculate Weight of S.S Angles Bar</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.gopalgroup.laxconsteelslimited;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -9,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,42 +29,61 @@ public class ProductFragment extends Fragment {
 
         List<ProductData> productDataList = new ArrayList<>();
 
-        ProductData mProductData = new ProductData("Bright Bar", R.drawable.bright_bar);
-        productDataList.add(mProductData);
+        /*
+        [
+        "Bright Bars",
+        "Precision Shaft Quality Bars",
+        "Hexagonal Bright Bars",
+        "Square Bright Bars",
+        "Hrap Equal Angles",
+        "Forged & Turned Round Bars",
+        "Hrap Flat Bars",
+        "Hot Rolled Round Cornered",
+        "Hot Rolled Round Bars",
+        "Continuous Cast Billets/Blooms",
+        "Forging Quality Ingots",
+        "Cold Drawn Flat Bars",
+        "Hrap Unequal Angles",
+        "Threaded Bars",
+        "Duplex Steels"
+        ]
+        */
 
-        mProductData = new ProductData("Flat Bar", R.drawable.flat_bar);
-        productDataList.add(mProductData);
+        String[] All_products = {
 
-        mProductData = new ProductData("Flat Bar", R.drawable.flat_bar);
-        productDataList.add(mProductData);
+                "Bright Bars",
+                "Precision Shaft Quality Bars",
+                "Hexagonal Bright Bars",
+                "Square Bright Bars",
+                "Hrap Equal Angles",
+                "Forged & Turned Round Bars",
+                "Hrap Flat Bars",
+                "Hot Rolled Round Cornered",
+                "Hot Rolled Round Bars",
+                "Continuous Cast Billets/Blooms",
+                "Forging Quality Ingots",
+                "Cold Drawn Flat Bars",
+                "Hrap Unequal Angles",
+                "Threaded Bars",
+                "Duplex Steels"
+        };
 
-        mProductData = new ProductData("Flat Bar", R.drawable.flat_bar);
-        productDataList.add(mProductData);
-
-        mProductData = new ProductData("Flat Bar", R.drawable.flat_bar);
-        productDataList.add(mProductData);
-
-
-        mProductData = new ProductData("Bright Bar", R.drawable.bright_bar);
-        productDataList.add(mProductData);
-
-        mProductData = new ProductData("Flat Bar", R.drawable.flat_bar);
-        productDataList.add(mProductData);
-
-        mProductData = new ProductData("Flat Bar", R.drawable.flat_bar);
-        productDataList.add(mProductData);
-
-        mProductData = new ProductData("Flat Bar", R.drawable.flat_bar);
-        productDataList.add(mProductData);
-
-        mProductData = new ProductData("Flat Bar", R.drawable.flat_bar);
-        productDataList.add(mProductData);
-
+        for (String product : All_products){
+            ProductData mProductData = new ProductData(product, getProductImageByName(product));
+            productDataList.add(mProductData);
+        }
 
         ProductAdapter productAdapter = new ProductAdapter(getContext(), productDataList);
         recyclerView.setAdapter(productAdapter);
 
 
         return view;
+    }
+
+    public int getProductImageByName(String productName){
+        String image_filename = productName.replace("/","_").replace("& ", "").replace(" ", "_");
+        image_filename = image_filename.toLowerCase();
+        int image_drawable = getResources().getIdentifier(image_filename, "drawable", getContext().getPackageName());
+        return  image_drawable;
     }
 }

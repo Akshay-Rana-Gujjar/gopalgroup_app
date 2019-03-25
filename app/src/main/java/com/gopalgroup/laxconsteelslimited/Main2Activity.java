@@ -5,17 +5,12 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main2Activity extends AppCompatActivity {
 
-    private TextView mTextMessage;
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -31,14 +26,13 @@ public class Main2Activity extends AppCompatActivity {
 
                 case R.id.navigation_dashboard:
                     fragment = new ProductFragment();
-                            break;
+                    break;
                 case R.id.navigation_notifications:
 
-
-
-
-
                     fragment = new CalculatorFragment();
+                    break;
+                case R.id.navigation_contact_us:
+                    fragment = new ContactUsFragment();
                     break;
             }
 
@@ -68,5 +62,6 @@ public class Main2Activity extends AppCompatActivity {
         }
         return false;
     }
+
 
 }

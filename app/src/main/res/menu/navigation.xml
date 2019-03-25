@@ -15,5 +15,10 @@
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_calculator"
         android:title="Calculator" />
+    <item
+        android:id="@+id/navigation_contact_us"
+        android:icon="@drawable/ic_phone_black_24dp"
+        android:title="Contact Us" />
+
 
 </menu>

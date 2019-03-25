@@ -1,7 +1,10 @@
 package com.gopalgroup.laxconsteelslimited;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +19,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
     private Context context;
     private List<ProductData> productDataList;
+
+
 
 
     public ProductAdapter(Context context, List<ProductData> productDataList) {
@@ -34,10 +39,22 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ProductViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull ProductViewHolder viewHolder, final int i) {
 
         viewHolder.imageView.setImageResource(productDataList.get(i).getProductImage());
         viewHolder.productName.setText(productDataList.get(i).getProductName());
+        viewHolder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ProductDescription.class);
+
+                intent.putExtra("productName", productDataList.get(i).getProductName());
+                intent.putExtra("productImage", productDataList.get(i).getProductImage());
+
+                ContextCompat.startActivity(context,intent,null);
+
+            }
+        });
 
     }
 
@@ -51,6 +68,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
 
         ImageView imageView;
         TextView productName;
+        CardView cardView;
 
 
         ProductViewHolder(@NonNull View itemView) {
@@ -59,6 +77,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             imageView = itemView.findViewById(R.id.productImage);
 
             productName = itemView.findViewById(R.id.productName);
+
+            cardView = itemView.findViewById(R.id.cardView);
         }
     }
 
